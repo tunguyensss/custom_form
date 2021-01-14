@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Form</title>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <section
+      class="w-100 h-screen bg-light"
+      style="
+        background-image: url('./assets/images/thomas-ciszewski-JnY_xqJE230-unsplash.jpg');
+      "
+    >
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="shadow-lg bg-white p-4 rounded w-100 items-center">
+              <h2 class="py-2">Registration Form</h2>
+
+              <form action="" class="needs-validation" novalidate>
+                <div class="row">
+                  <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div class="form-group">
+                      <label for="firstname">First Name</label>
+                      <input
+                        type="text"
+                        name="firstname"
+                        id="firstname"
+                        class="form-control"
+                        placeholder="John"
+                        required
+                      />
+
+                      <!-- Feedback -->
+                      <small class="valid-feedback">Look Good!</small>
+                      <small class="invalid-feedback">Must not be empty!</small>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div class="form-group">
+                      <label for="lastname">Last Name</label>
+                      <input
+                        type="text"
+                        name="lastname"
+                        id="lastname"
+                        class="form-control"
+                        placeholder="Doe"
+                        required
+                      />
+
+                      <!-- Feedback -->
+                      <small class="valid-feedback">Look Good!</small>
+                      <small class="invalid-feedback">Must not be empty!</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div class="form-group">
+                      <label for="birthday">Birthday</label>
+                      <input
+                        type="text"
+                        name="birthday"
+                        id="birthday"
+                        class="form-control"
+                        placeholder="01/01/1999"
+                        onfocus="(this.type='date')"
+                        required
+                      />
+
+                      <!-- Feedback -->
+                      <small class="valid-feedback">Look Good!</small>
+                      <small class="invalid-feedback">Must not be empty!</small>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6 col-sm-12">
+                    <div class="form-group">
+                      <label for="gender">Gender</label>
+                      <select name="gender" id="gender" class="form-control">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="otther">Other</option>
+                      </select>
+                      <!-- Feedback -->
+                      <small class="valid-feedback">Look Good!</small>
+                      <small class="invalid-feedback">Must not be empty!</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="company">Company</label>
+                      <input
+                        type="text"
+                        name="company"
+                        id="company"
+                        class="form-control"
+                        placeholder="NASA"
+                        required
+                      />
+
+                      <!-- Feedback -->
+                      <small class="valid-feedback">Look Good!</small>
+                      <small class="invalid-feedback">Must not be empty!</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="username">Username</label>
+                      <div class="input-group">
+                        <span class="input-group-text" id="unique-mark">@</span>
+                        <input
+                          type="text"
+                          name="username"
+                          id="username"
+                          class="form-control"
+                          placeholder="choose_a_uniquee_name"
+                          aria-describedby="unique-mark"
+                          required
+                        />
+                      </div>
+
+                      <!-- Feedback -->
+                      <small class="valid-feedback">Look Good!</small>
+                      <small class="invalid-feedback">Must not be empty!</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control rounded-full"
+                        placeholder="********"
+                        required
+                      />
+
+                      <!-- Feedback -->
+                      <small class="valid-feedback">Look Good!</small>
+                      <small class="invalid-feedback">Must not be empty!</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        name="agree-terms"
+                        id="agree-terms"
+                        class="form-check-input"
+                      />
+                      <label for="agree-terms">Agree Condition & Terms</label>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-success">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-0 col-md-6 col-lg-6 col-xl-6"></div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/validate-form.js"></script>
+  </body>
+</html>

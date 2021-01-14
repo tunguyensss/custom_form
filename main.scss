@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+// Add new Font Family
+$font-family-sans-serif: "Poppins", "san-serif";
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  2xl: 1280px,
+  3xl: 1440px,
+);
+
+.h-screen {
+  height: 100vh;
+}
+
+.rounded-full {
+  border-radius: 99rem;
+}
+
+$theme-colors: (
+  "primary": #0074d9,
+  //   "danger": #ff4136,
+  "danger": #de1998,
+); // IMPORT SCSS FROM BOOTSTRAP4
+@import "./node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <div id="root" class="w-100">
+      <header class="bg-light">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Logo -->
+            <div class="navbar-brand">
+              <a href="#" class="w-50">
+                <img src="./assets/images/Logo.svg" alt="" class="w-50" />
+              </a>
+            </div>
+
+            <!-- Toggler Btn -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#headerNavToggler"
+              aria-controls="headerNavToggler"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse" id="headerNavToggler">
+              <ul class="navbar-nav ml-auto">
+                <li class="navbar-item dropdown">
+                  <a
+                    href="#"
+                    class="navbar-link px-lg-2 mx-lg-1 py-sm-2 my-sm-2 dropdown-toggle rounded active"
+                    id="dropdown-solutions"
+                    data-toggle="dropdown"
+                    >Solutions</a
+                  >
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdown-solutions"
+                  >
+                    <a href="#" class="dropdown-item">HATS</a>
+                    <a href="#" class="dropdown-item">RPA</a>
+                    <a href="#" class="dropdown-item">ERP</a>
+                  </div>
+                </li>
+                <li class="navbar-item">
+                  <a
+                    href="#"
+                    class="navbar-link px-lg-2 mx-lg-1 py-sm-2 my-sm-2 rounded"
+                    >About Us</a
+                  >
+                </li>
+                <li class="navbar-item">
+                  <a
+                    href="#"
+                    class="navbar-link px-lg-2 mx-lg-1 py-sm-2 my-sm-2 rounded"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section>
+        <div class="w-100">
+          <div class="position-relative">
+            <!-- content -->
+            <div class="w-100 position-absolute center-vertical">
+              <div class="w-100">
+                <div class="container">
+                  <h2 class="banner__content--title">Predict Talent success</h2>
+                  <p class="banner__content--description">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book
+                  </p>
+
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#exploreForm"
+                  >
+                    Explore &rarr;
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- overlay -->
+            <div
+              class="overlay banner__overlay--toright position-absolute"
+            ></div>
+            <img src="./assets/images/banner.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </section>
+
+      <!-- MODAL -->
+      <!-- Explore Form -->
+      <div class="modal fade" id="exploreForm" role="dialog">
+        <div class="modal-dialog" role="form">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Explore Form</h5>
+              <button
+                class="close"
+                data-dissmiss="modal"
+                aria-label="Close Modal"
+                type="button"
+              >
+                <span> &#10005; </span>
+              </button>
+            </div>
+
+            <form action="" class="needs-validation" novalidate>
+              <div class="modal-body">
+                <p>
+                  Please enter your name and email. The article will be sent to
+                  you via email.
+                </p>
+                <div class="form-group">
+                  <label for="fullname">Fullname</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Please type your fullname here"
+                    required
+                  />
+                  <!-- Feedback -->
+                  <small class="valid-feedback">Look Good!</small>
+                  <small class="invalid-feedback">Must not be empty!</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your email here"
+                    required
+                  />
+                  <!-- Feedback -->
+                  <small class="valid-feedback">Look Good!</small>
+                  <small class="invalid-feedback">Must not be empty!</small>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn">Close</button>
+                <button class="btn btn-primary" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/validate-form.js"></script>
+  </body>
+</html>
